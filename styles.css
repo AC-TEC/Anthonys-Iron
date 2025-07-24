@@ -10,6 +10,8 @@ html, body {
     overflow-x: hidden;
 }
 
+/* NAVIGATION STYLING HERE */
+
 .mobile_nav{
     display: flex;
     justify-content: space-between;
@@ -22,11 +24,36 @@ html, body {
     padding-left: 2%;
 }
 
-
 .menu_toggle{
     color: #cbc3ad;
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: transparent;
     padding-right: 2%;
+    /*padding-bottom: 2%;*/
     border: none;
+}
+
+
+
+
+/* VIDEO STYLING HERE */
+
+.vid_container{
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.full_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -85%);
+    width: clamp(80px, 100vw, 200px);
+    z-index: 2;
+
 }
