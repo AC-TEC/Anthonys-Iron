@@ -1,0 +1,4 @@
+*{
+    /* keeps div/element at size you set it to and avoids resizing when item inside gets bigger. the who*/
+    box-sizing: border-box;
+}
