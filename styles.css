@@ -1,4 +1,32 @@
 *{
     /* keeps div/element at size you set it to and avoids resizing when item inside gets bigger. the who*/
     box-sizing: border-box;
+    /*border: 1px solid red; temp */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.mobile_nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 6vh;
+    width: 100%;
+}
+
+.nav_logo{
+    padding-left: 2%;
+}
+
+
+.menu_toggle{
+    color: #cbc3ad;
+    font-size: 2rem;
+    background-color: transparent;
+    padding-right: 2%;
+    border: none;
 }
