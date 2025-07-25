@@ -1,7 +1,7 @@
 *{
     /* keeps div/element at size you set it to and avoids resizing when item inside gets bigger. the who*/
     box-sizing: border-box;
-    /*border: 1px solid red; */
+    /*border: 1px solid red;  temp*/
 }
 
 html, body {
@@ -10,7 +10,7 @@ html, body {
     overflow-x: hidden;
 }
 
-/* NAVIGATION STYLING HERE */
+/* --------------- NAVIGATION STYLING HERE ------------------*/
 
 .mobile_nav{
     display: flex;
@@ -34,7 +34,7 @@ html, body {
 }
 
 
-/* menu transition after click */
+/* menu transition */
 .mobile_menu {
     position: fixed;
     top: 0;
@@ -50,6 +50,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
 }
 
 .mobile_menu ul {
@@ -76,7 +78,7 @@ html, body {
 }
 
 
-/* Menu transition after (x) close click */
+/* Menu close button */
 .menu_close {
     position: absolute;
     top: 1%;
@@ -89,8 +91,28 @@ html, body {
     z-index: 99;
 }
 
+/* Contact button */
+.contact_button{
+    color: white;
+    background-color: #cbc3ad;
+    font-size: 1.3rem;
+    font-weight: 50;
+    border: none;
+    padding: 1rem 1.8rem; /* controls height & width */
+    border-radius: 999px;   /* makes it pill-shaped */
+    cursor: pointer;
+}
 
-/* VIDEO STYLING HERE */
+
+.contact_button_container{
+    margin-top: 8rem; /* pushes it down */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* --------------- VIDEO STYLING HERE ------------------*/
 
 .vid_container{
     display: flex;
