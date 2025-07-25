@@ -25,11 +25,12 @@ html, body {
 }
 
 .menu_toggle{
-    color: white; /* color: #cbc3ad*/
-    font-size: 2.5rem;
+    color: red; /*color: #cbc3ad; */
+    font-size: 2.8rem;
     background-color: transparent;
     padding-right: 2%;    
     border: none;
+    cursor: pointer;
 }
 
 
@@ -52,7 +53,7 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-45%, -85%);
-    width: clamp(80px, 100vw, 250px); /*previous was 200px*/
+    width: clamp(80px, 200vw, 250px); /*previous was 200px*/
     z-index: 2;
 
 }
