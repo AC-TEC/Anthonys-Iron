@@ -91,12 +91,13 @@ html, body {
     z-index: 99;
 }
 
+
 /* Contact button */
 .contact_button{
     color: black;
     background-color: #cbc3ad;
     font-size: 1.3rem;
-    font-weight: 50;
+    font-weight: 200;
     border: none;
     padding: 1rem 1.8rem; /* controls height & width */
     border-radius: 999px;   /* makes it pill-shaped */
