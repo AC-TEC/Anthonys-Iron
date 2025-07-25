@@ -93,8 +93,8 @@ html, body {
 
 /* Contact button */
 .contact_button{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: #cbc3ad;
     font-size: 1.3rem;
     font-weight: 50;
     border: none;
