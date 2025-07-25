@@ -1,7 +1,7 @@
 *{
     /* keeps div/element at size you set it to and avoids resizing when item inside gets bigger. the who*/
     box-sizing: border-box;
-    /*border: 1px solid red; temp */
+    /*border: 1px solid red; */
 }
 
 html, body {
@@ -26,7 +26,7 @@ html, body {
 
 .menu_toggle{
     color: #cbc3ad;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     background-color: transparent;
     padding-right: 2%;    
     border: none;
@@ -34,6 +34,64 @@ html, body {
 }
 
 
+/* menu transition after click */
+.mobile_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile_menu li {
+    margin: 1.5rem 0;
+}
+
+.mobile_menu a {
+    color: black;
+    font-size: 2.2rem;
+    text-decoration: none;
+}
+
+.mobile_menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Menu transition after (x) close click */
+.menu_close {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 2.7rem;
+    background: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    z-index: 100;
+}
 
 
 /* VIDEO STYLING HERE */
@@ -52,8 +110,7 @@ html, body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-45%, -8%); /* previous -85%*/
+    transform: translate(-45%, -8%);
     width: clamp(80px, 200vw, 250px); /*previous was 100vw, 200px*/
     z-index: 2;
-
 }
